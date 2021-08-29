@@ -1,4 +1,4 @@
-// SICP JS Exercise 1.7
+// SICP JS Exercise 1.7 Code only
 function square(x) {
     return x * x;
 }
