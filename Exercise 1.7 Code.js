@@ -1,4 +1,5 @@
 // SICP JS Exercise 1.7 Code only
+//square function is just for double checking
 function square(x) {
     return x * x;
 }
