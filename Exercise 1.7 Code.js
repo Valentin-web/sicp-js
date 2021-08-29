@@ -1,5 +1,5 @@
 // SICP JS Exercise 1.7 Code only
-//square function is just for double checking
+//square function is just for double checking square(sqrt_iter(3, 81, 0));
 function square(x) {
     return x * x;
 }
@@ -22,5 +22,7 @@ function sqrt_iter(guess, x, oldguess) {
            : sqrt_iter(improve(guess, x), x, guess);
 }
 
-
-sqrt_iter(3, 0.0000000000000000002, 0);
+//the 0 is just for making it start, because in the beginning there is no oldguess
+sqrt_iter(3, 81, 0);
+//square(sqrt_iter(3, 81, 0));
+// this will return the radicant
