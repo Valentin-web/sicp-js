@@ -6,10 +6,6 @@ function is_good_enough(guess,  oldguess) {
     return  oldguess === guess;
 }
 
-function average(x, y) {
-    return (x + y) / 2;
-}
-
 function improve(guess, x) {
     return ((x / square(guess)) + (2 * guess)) / 3;
 }
