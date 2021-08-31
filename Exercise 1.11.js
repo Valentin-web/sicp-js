@@ -9,7 +9,7 @@ function f_recursive(n) {
            : 0;
 }
 
-//f_recursive(10);
+f_recursive(-1);
 
 //function with iterative process
 function f_iterative(n) {
@@ -18,7 +18,9 @@ function f_iterative(n) {
                ? c
                : f_iter(a + (2*b) + (3*c), a, b, counter - 1);
     }
-    return f_iter(2, 1, 0, n);
+    return n < 3
+           ? n
+           : f_iter(2, 1, 0, n);
 }
 
-f_iterative(10);
+f_iterative(-2);
